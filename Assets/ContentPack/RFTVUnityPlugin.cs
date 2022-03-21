@@ -5,6 +5,7 @@ using RoR2.ExpansionManagement;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
+using UnityEngine.SceneManagement;
 
 namespace ReleasedFromTheVoid
 {
@@ -54,5 +55,63 @@ namespace ReleasedFromTheVoid
             }
             orig(self, newFolders);
         }
+        /*private void FixedUpdate()
+        {
+            if (Input.GetKeyDown(KeyCode.Keypad0))
+            {
+                Addressables.LoadSceneAsync("RoR2/Dev/renderitem/renderitem.unity",UnityEngine.SceneManagement.LoadSceneMode.Single);
+            }
+            if (Input.GetKeyDown(KeyCode.Keypad1))
+            {
+                Addressables.LoadSceneAsync("RoR2/Dev/ItemLogBookPositionalOffsets/ItemLogBookPositionalOffsets.unity", UnityEngine.SceneManagement.LoadSceneMode.Single);
+            }
+            if (Input.GetKeyDown(KeyCode.Keypad2))
+            {
+                Addressables.LoadSceneAsync("RoR2/Junk/dampcave/dampcave.unity", UnityEngine.SceneManagement.LoadSceneMode.Additive);
+            }
+            if (Input.GetKeyDown(KeyCode.Keypad3))
+            {
+                Addressables.LoadSceneAsync("RoR2/Junk/slice1/slice1.unity", UnityEngine.SceneManagement.LoadSceneMode.Additive);
+            }
+            if (Input.GetKeyDown(KeyCode.Keypad4))
+            {
+                Addressables.LoadSceneAsync("RoR2/Junk/slice2/slice2.unity", UnityEngine.SceneManagement.LoadSceneMode.Additive);
+            }
+            if (Input.GetKeyDown(KeyCode.Keypad5))
+            {
+                Addressables.LoadSceneAsync("RoR2/Junk/space/space.unity", UnityEngine.SceneManagement.LoadSceneMode.Single);
+            }
+            if (Input.GetKeyDown(KeyCode.Keypad6))
+            {
+                Addressables.LoadSceneAsync("RoR2/Junk/stage1/stage1.unity", UnityEngine.SceneManagement.LoadSceneMode.Additive);
+            }
+            if (Input.GetKeyDown(KeyCode.Keypad7))
+            {
+                Addressables.LoadSceneAsync("RoR2/Junk/testscene/testscene.unity", UnityEngine.SceneManagement.LoadSceneMode.Additive);
+            }
+            if (Input.GetKeyDown(KeyCode.Keypad8))
+            {
+                ScanSceneForMissingShaders();
+            }
+        }
+        private static void ScanSceneForMissingShaders()
+        {
+            Shader standardHopoo = Addressables.LoadAssetAsync<Shader>("RoR2/Base/Shaders/HGStandard.shader").WaitForCompletion();
+            Shader triplanar = Addressables.LoadAssetAsync<Shader>("RoR2/Base/Shaders/HGTriplanarTerrainBlend.shader").WaitForCompletion();
+            foreach (Renderer render in Resources.FindObjectsOfTypeAll(typeof(Renderer)) as Renderer[])
+            {
+                if (render.material.shader.name.Contains("InternalErrorShader"))
+                {
+                    render.material.shader = standardHopoo;
+                }
+            }
+            foreach (Terrain terrain in Resources.FindObjectsOfTypeAll(typeof(Terrain)) as Terrain[])
+            {
+                if (terrain.materialTemplate.shader.name.Contains("InternalErrorShader"))
+                {
+                    terrain.materialTemplate.shader = triplanar;
+                }
+            }
+        }*/
     }
 }
