@@ -1,0 +1,257 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f9af1c6015733a42be940cc462aa7ed, type: 3}
+  m_Name: Log 50
+  m_EditorClassIdentifier: 
+  pipeline: {fileID: 11400000, guid: c67f5a6a33715114e8be7947dfe3c3e5, type: 2}
+  creationDate:
+    ticks: 637832650771103408
+  entries:
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650824720468
+    message: '[ModBuild](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fAnreol%2fModBuild.asset)
+      Finished execution'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650824002390
+    message: '[ModBuild(1 - Copy)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fAnreol%2fModBuild.asset)[RFTVManifest](assetlink://Assets%2fContentPack%2fRFTVManifest.asset)
+      ``` <BuildPath> ``` to ``` <FDriveGang> ```
+
+      
+
+      
+
+      Copied
+      ``` C:/Users/Anr/source/repos/ReleasedFromTheVoid/Builds/Anreol-ReleasedFromTheVoid/0.0.1/plugins
+      ``` to ``` F:/SteamLibrary/steamapps/common/Risk of Rain 2/BepInEx/plugins/ReleasedFromTheVoid
+      ```'
+    context:
+    - "Copied Files\r\n\r\n 1. F:/SteamLibrary/steamapps/common/Risk of Rain 2/BepInEx/plugins/ReleasedFromTheVoid\\RFTV.dll\r\n\r\n
+      2. F:/SteamLibrary/steamapps/common/Risk of Rain 2/BepInEx/plugins/ReleasedFromTheVoid\\RFTV.pdb"
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650815846011
+    message: '[ModBuild(1 - Copy)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fAnreol%2fModBuild.asset)
+      Execute Job'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650814949356
+    message: '[DevBuild](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fDevBuild.asset)
+      Finished execution'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650813878389
+    message: '[StageManifestFiles](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fModPipelines%2fStageManifestFiles.asset)
+      Finished execution'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650813570329
+    message: '[StageManifestFiles(0 - StageManifestFiles)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fModPipelines%2fStageManifestFiles.asset)
+      Execute Job'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650813280785
+    message: '[StageManifestFiles](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fModPipelines%2fStageManifestFiles.asset)
+      Clearing PipelineJob error states'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650812937987
+    message: '[StageManifestFiles](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fModPipelines%2fStageManifestFiles.asset)
+      Execute Pipeline'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650812536259
+    message: '[DevBuild(2 - ExecutePipeline)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fDevBuild.asset)
+      Execute Job'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650810948932
+    message: '[BuildUncompressed](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fModPipelines%2fBuildUncompressed.asset)
+      Finished execution'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650810676291
+    message: '[BuildUncompressed(1 - StageAssemblies)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fModPipelines%2fBuildUncompressed.asset)[RFTVManifest](assetlink://Assets%2fContentPack%2fRFTVManifest.asset)
+      staging ``` ThunderKit/Libraries ``` in ``` C:/Users/Anr/source/repos/ReleasedFromTheVoid/Builds/Anreol-ReleasedFromTheVoid/0.0.1/plugins
+      ```
+
+'
+    context:
+    - "Assembly Files\r\nFrom: ThunderKit/Libraries\\RFTV.pdb\r\n  To: C:/Users/Anr/source/repos/ReleasedFromTheVoid/Builds/Anreol-ReleasedFromTheVoid/0.0.1/plugins/RFTV.pdb\r\n\r\nFrom:
+      ThunderKit/Libraries\\RFTV.dll\r\n  To: C:/Users/Anr/source/repos/ReleasedFromTheVoid/Builds/Anreol-ReleasedFromTheVoid/0.0.1/plugins/RFTV.dll\r\n\r\n"
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650808297852
+    message: '[BuildUncompressed(1 - StageAssemblies)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fModPipelines%2fBuildUncompressed.asset)[RFTVManifest](assetlink://Assets%2fContentPack%2fRFTVManifest.asset)
+      Build Completed: ``` ThunderKit/Libraries/RFTV.dll ```'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650804757749
+    message: '[BuildUncompressed(1 - StageAssemblies)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fModPipelines%2fBuildUncompressed.asset)[RFTVManifest](assetlink://Assets%2fContentPack%2fRFTVManifest.asset)
+      Building : ThunderKit/Libraries/RFTV.dll'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650786101447
+    message: '[BuildUncompressed(1 - StageAssemblies)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fModPipelines%2fBuildUncompressed.asset)
+      Execute Job'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 637832650785931583
+    message: '[BuildUncompressed(0 - StageAssetBundles)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fModPipelines%2fBuildUncompressed.asset)
+      No valid AssetBundleDefinitions defined, skipping [StageAssetBundles](assetlink://Packages%2fcom.passivepicasso.thunderkit%2fEditor%2fCore%2fPipelines%2fJobs%2fStageAssetBundles.cs)
+      PipelineJob'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650785173846
+    message: '[BuildUncompressed(0 - StageAssetBundles)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fModPipelines%2fBuildUncompressed.asset)
+      Execute Job'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650785004061
+    message: '[BuildUncompressed](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fModPipelines%2fBuildUncompressed.asset)
+      Clearing PipelineJob error states'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650784808870
+    message: '[BuildUncompressed](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fModPipelines%2fBuildUncompressed.asset)
+      Execute Pipeline'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650784580531
+    message: '[DevBuild(1 - ExecutePipeline)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fDevBuild.asset)
+      Execute Job'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650783575288
+    message: '[DeleteSourceAndDest](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fModPipelines%2fDeleteSourceAndDest.asset)
+      Finished execution'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650783405743
+    message: '[DeleteSourceAndDest(2 - Delete)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fModPipelines%2fDeleteSourceAndDest.asset)
+      Deleted F:/SteamLibrary/steamapps/common/Risk of Rain 2/BepInEx/plugins/ReleasedFromTheVoid'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650783236203
+    message: '[DeleteSourceAndDest(2 - Delete)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fModPipelines%2fDeleteSourceAndDest.asset)
+      Deleting F:/SteamLibrary/steamapps/common/Risk of Rain 2/BepInEx/plugins/ReleasedFromTheVoid'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650778006862
+    message: '[DeleteSourceAndDest(2 - Delete)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fModPipelines%2fDeleteSourceAndDest.asset)
+      Execute Job'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650777817428
+    message: '[DeleteSourceAndDest(1 - Delete)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fModPipelines%2fDeleteSourceAndDest.asset)
+      Deleted ThunderKit'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650777601880
+    message: '[DeleteSourceAndDest(1 - Delete)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fModPipelines%2fDeleteSourceAndDest.asset)
+      Deleting ThunderKit'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650775242366
+    message: '[DeleteSourceAndDest(1 - Delete)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fModPipelines%2fDeleteSourceAndDest.asset)
+      Execute Job'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650775072817
+    message: '[DeleteSourceAndDest(0 - Delete)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fModPipelines%2fDeleteSourceAndDest.asset)[RFTVManifest](assetlink://Assets%2fContentPack%2fRFTVManifest.asset)
+      Deleted C:/Users/Anr/source/repos/ReleasedFromTheVoid/Builds/Anreol-ReleasedFromTheVoid/0.0.1/plugins'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650774883331
+    message: '[DeleteSourceAndDest(0 - Delete)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fModPipelines%2fDeleteSourceAndDest.asset)[RFTVManifest](assetlink://Assets%2fContentPack%2fRFTVManifest.asset)
+      Deleting C:/Users/Anr/source/repos/ReleasedFromTheVoid/Builds/Anreol-ReleasedFromTheVoid/0.0.1/plugins'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650772908306
+    message: '[DeleteSourceAndDest(0 - Delete)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fModPipelines%2fDeleteSourceAndDest.asset)
+      Execute Job'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650772728782
+    message: '[DeleteSourceAndDest](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fModPipelines%2fDeleteSourceAndDest.asset)
+      Clearing PipelineJob error states'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650772559241
+    message: '[DeleteSourceAndDest](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fModPipelines%2fDeleteSourceAndDest.asset)
+      Execute Pipeline'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650772399938
+    message: '[DevBuild(0 - ExecutePipeline)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fDevBuild.asset)
+      Execute Job'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650772260039
+    message: '[DevBuild](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fDevBuild.asset)
+      Clearing PipelineJob error states'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650772150328
+    message: '[DevBuild](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fDevBuild.asset)
+      Execute Pipeline'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650772050600
+    message: '[ModBuild(0 - ExecutePipeline)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fAnreol%2fModBuild.asset)
+      Execute Job'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650771990753
+    message: '[ModBuild](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fAnreol%2fModBuild.asset)
+      Clearing PipelineJob error states'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832650771841392
+    message: '[ModBuild](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fAnreol%2fModBuild.asset)
+      Execute Pipeline'
+    context: []

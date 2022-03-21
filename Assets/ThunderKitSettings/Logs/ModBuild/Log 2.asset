@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f9af1c6015733a42be940cc462aa7ed, type: 3}
+  m_Name: Log 2
+  m_EditorClassIdentifier: 
+  pipeline: {fileID: 11400000, guid: c67f5a6a33715114e8be7947dfe3c3e5, type: 2}
+  creationDate:
+    ticks: 637832212377089845
+  entries:
+  - logLevel: 2
+    internalTime:
+      ticks: 637832212384962751
+    message: '[ModBuild(0 - ExecutePipeline)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fAnreol%2fModBuild.asset)[RFTVManifest](assetlink://Assets%2fContentPack%2fRFTVManifest.asset)
+      Pipeline has PipelineJobs that require a Manifest but no Manifest is assigned'
+    context:
+    - "Stacktrace\r\nPipeline has PipelineJobs that require a Manifest but no Manifest
+      is assigned\r\n\r\n  at ThunderKit.Core.Pipelines.Pipeline+<Execute>d__41.MoveNext
+      () [0x0050a] in [C:\\Users\\Anr\\source\\repos\\ReleasedFromTheVoid\\Library\\PackageCache\\com.passivepicasso.thunderkit@db5ff970af\\Editor\\Core\\Pipelines\\Pipeline.cs:167](exceptionsource://C:\\Users\\Anr\\source\\repos\\ReleasedFromTheVoid\\Library\\PackageCache\\com.passivepicasso.thunderkit@db5ff970af\\Editor\\Core\\Pipelines\\Pipeline.cs#167)
+      \r\n\r\n--- End of stack trace from previous location where exception was thrown
+      ---\r\n\r\n  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw
+      () [0x0000c] in <eae584ce26bc40229c1b1aa476bfa589>:0 \r\n\r\n  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess
+      (System.Threading.Tasks.Task task) [0x0003e] in <eae584ce26bc40229c1b1aa476bfa589>:0
+      \r\n\r\n  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification
+      (System.Threading.Tasks.Task task) [0x00028] in <eae584ce26bc40229c1b1aa476bfa589>:0
+      \r\n\r\n  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task
+      task) [0x00008] in <eae584ce26bc40229c1b1aa476bfa589>:0 \r\n\r\n  at System.Runtime.CompilerServices.TaskAwaiter.GetResult
+      () [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 \r\n\r\n  at ThunderKit.Core.Pipelines.Jobs.ExecutePipeline+<Execute>d__2.MoveNext
+      () [0x0016f] in [C:\\Users\\Anr\\source\\repos\\ReleasedFromTheVoid\\Library\\PackageCache\\com.passivepicasso.thunderkit@db5ff970af\\Editor\\Core\\Pipelines\\Jobs\\ExecutePipeline.cs:30](exceptionsource://C:\\Users\\Anr\\source\\repos\\ReleasedFromTheVoid\\Library\\PackageCache\\com.passivepicasso.thunderkit@db5ff970af\\Editor\\Core\\Pipelines\\Jobs\\ExecutePipeline.cs#30)
+      \r\n\r\n--- End of stack trace from previous location where exception was thrown
+      ---\r\n\r\n  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw
+      () [0x0000c] in <eae584ce26bc40229c1b1aa476bfa589>:0 \r\n\r\n  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess
+      (System.Threading.Tasks.Task task) [0x0003e] in <eae584ce26bc40229c1b1aa476bfa589>:0
+      \r\n\r\n  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification
+      (System.Threading.Tasks.Task task) [0x00028] in <eae584ce26bc40229c1b1aa476bfa589>:0
+      \r\n\r\n  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task
+      task) [0x00008] in <eae584ce26bc40229c1b1aa476bfa589>:0 \r\n\r\n  at System.Runtime.CompilerServices.TaskAwaiter.GetResult
+      () [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 \r\n\r\n  at ThunderKit.Core.Pipelines.Pipeline+<ExecuteJob>d__44.MoveNext
+      () [0x0002a] in [C:\\Users\\Anr\\source\\repos\\ReleasedFromTheVoid\\Library\\PackageCache\\com.passivepicasso.thunderkit@db5ff970af\\Editor\\Core\\Pipelines\\Pipeline.cs:207](exceptionsource://C:\\Users\\Anr\\source\\repos\\ReleasedFromTheVoid\\Library\\PackageCache\\com.passivepicasso.thunderkit@db5ff970af\\Editor\\Core\\Pipelines\\Pipeline.cs#207)
+      \r\n\r\n--- End of stack trace from previous location where exception was thrown
+      ---\r\n\r\n  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw
+      () [0x0000c] in <eae584ce26bc40229c1b1aa476bfa589>:0 \r\n\r\n  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess
+      (System.Threading.Tasks.Task task) [0x0003e] in <eae584ce26bc40229c1b1aa476bfa589>:0
+      \r\n\r\n  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification
+      (System.Threading.Tasks.Task task) [0x00028] in <eae584ce26bc40229c1b1aa476bfa589>:0
+      \r\n\r\n  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task
+      task) [0x00008] in <eae584ce26bc40229c1b1aa476bfa589>:0 \r\n\r\n  at System.Runtime.CompilerServices.TaskAwaiter.GetResult
+      () [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 \r\n\r\n  at ThunderKit.Core.Pipelines.Pipeline+<Execute>d__41.MoveNext
+      () [0x0050a] in [C:\\Users\\Anr\\source\\repos\\ReleasedFromTheVoid\\Library\\PackageCache\\com.passivepicasso.thunderkit@db5ff970af\\Editor\\Core\\Pipelines\\Pipeline.cs:167](exceptionsource://C:\\Users\\Anr\\source\\repos\\ReleasedFromTheVoid\\Library\\PackageCache\\com.passivepicasso.thunderkit@db5ff970af\\Editor\\Core\\Pipelines\\Pipeline.cs#167)
+      \r\n\r\n--- End of stack trace from previous location where exception was thrown
+      ---\r\n\r\n  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw
+      () [0x0000c] in <eae584ce26bc40229c1b1aa476bfa589>:0 \r\n\r\n  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess
+      (System.Threading.Tasks.Task task) [0x0003e] in <eae584ce26bc40229c1b1aa476bfa589>:0
+      \r\n\r\n  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification
+      (System.Threading.Tasks.Task task) [0x00028] in <eae584ce26bc40229c1b1aa476bfa589>:0
+      \r\n\r\n  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task
+      task) [0x00008] in <eae584ce26bc40229c1b1aa476bfa589>:0 \r\n\r\n  at System.Runtime.CompilerServices.TaskAwaiter.GetResult
+      () [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 \r\n\r\n  at ThunderKit.Core.Pipelines.Jobs.ExecutePipeline+<Execute>d__2.MoveNext
+      () [0x000ea] in [C:\\Users\\Anr\\source\\repos\\ReleasedFromTheVoid\\Library\\PackageCache\\com.passivepicasso.thunderkit@db5ff970af\\Editor\\Core\\Pipelines\\Jobs\\ExecutePipeline.cs:26](exceptionsource://C:\\Users\\Anr\\source\\repos\\ReleasedFromTheVoid\\Library\\PackageCache\\com.passivepicasso.thunderkit@db5ff970af\\Editor\\Core\\Pipelines\\Jobs\\ExecutePipeline.cs#26)
+      \r\n\r\n--- End of stack trace from previous location where exception was thrown
+      ---\r\n\r\n  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw
+      () [0x0000c] in <eae584ce26bc40229c1b1aa476bfa589>:0 \r\n\r\n  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess
+      (System.Threading.Tasks.Task task) [0x0003e] in <eae584ce26bc40229c1b1aa476bfa589>:0
+      \r\n\r\n  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification
+      (System.Threading.Tasks.Task task) [0x00028] in <eae584ce26bc40229c1b1aa476bfa589>:0
+      \r\n\r\n  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task
+      task) [0x00008] in <eae584ce26bc40229c1b1aa476bfa589>:0 \r\n\r\n  at System.Runtime.CompilerServices.TaskAwaiter.GetResult
+      () [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 \r\n\r\n  at ThunderKit.Core.Pipelines.Pipeline+<ExecuteJob>d__44.MoveNext
+      () [0x0002a] in [C:\\Users\\Anr\\source\\repos\\ReleasedFromTheVoid\\Library\\PackageCache\\com.passivepicasso.thunderkit@db5ff970af\\Editor\\Core\\Pipelines\\Pipeline.cs:207](exceptionsource://C:\\Users\\Anr\\source\\repos\\ReleasedFromTheVoid\\Library\\PackageCache\\com.passivepicasso.thunderkit@db5ff970af\\Editor\\Core\\Pipelines\\Pipeline.cs#207)
+      \r\n\r\n--- End of stack trace from previous location where exception was thrown
+      ---\r\n\r\n  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw
+      () [0x0000c] in <eae584ce26bc40229c1b1aa476bfa589>:0 \r\n\r\n  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess
+      (System.Threading.Tasks.Task task) [0x0003e] in <eae584ce26bc40229c1b1aa476bfa589>:0
+      \r\n\r\n  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification
+      (System.Threading.Tasks.Task task) [0x00028] in <eae584ce26bc40229c1b1aa476bfa589>:0
+      \r\n\r\n  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task
+      task) [0x00008] in <eae584ce26bc40229c1b1aa476bfa589>:0 \r\n\r\n  at System.Runtime.CompilerServices.TaskAwaiter.GetResult
+      () [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 \r\n\r\n  at ThunderKit.Core.Pipelines.Pipeline+<Execute>d__41.MoveNext
+      () [0x003f3] in [C:\\Users\\Anr\\source\\repos\\ReleasedFromTheVoid\\Library\\PackageCache\\com.passivepicasso.thunderkit@db5ff970af\\Editor\\Core\\Pipelines\\Pipeline.cs:157](exceptionsource://C:\\Users\\Anr\\source\\repos\\ReleasedFromTheVoid\\Library\\PackageCache\\com.passivepicasso.thunderkit@db5ff970af\\Editor\\Core\\Pipelines\\Pipeline.cs#157) "
+  - logLevel: 2
+    internalTime:
+      ticks: 637832212382823129
+    message: '[DeleteSourceAndDest(0 - Delete)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fModPipelines%2fDeleteSourceAndDest.asset)
+      Halted execution'
+    context: []
+  - logLevel: 2
+    internalTime:
+      ticks: 637832212382653357
+    message: '[DeleteSourceAndDest(0 - Delete)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fModPipelines%2fDeleteSourceAndDest.asset)
+      Pipeline has PipelineJobs that require a Manifest but no Manifest is assigned'
+    context:
+    - Requirements
+    - 
+    - '[DeleteSourceAndDest.Delete](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fModPipelines%2fDeleteSourceAndDest.asset)'
+  - logLevel: 0
+    internalTime:
+      ticks: 637832212382483812
+    message: '[DeleteSourceAndDest(0 - Delete)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fModPipelines%2fDeleteSourceAndDest.asset)
+      Execute Pipeline'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832212382324238
+    message: '[DevBuild(0 - ExecutePipeline)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fDevBuild.asset)[RFTVManifest](assetlink://Assets%2fContentPack%2fRFTVManifest.asset)
+      Execute Job'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832212381666002
+    message: '[DevBuild(0 - ExecutePipeline)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fDevBuild.asset)[RFTVManifest](assetlink://Assets%2fContentPack%2fRFTVManifest.asset)
+      Clearing PipelineJob error states'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832212379970269
+    message: '[DevBuild(0 - ExecutePipeline)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fDevBuild.asset)[RFTVManifest](assetlink://Assets%2fContentPack%2fRFTVManifest.asset)
+      Execute Pipeline'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832212379870521
+    message: '[ModBuild(0 - ExecutePipeline)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fAnreol%2fModBuild.asset)[RFTVManifest](assetlink://Assets%2fContentPack%2fRFTVManifest.asset)
+      Execute Job'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832212379810684
+    message: '[ModBuild(0 - ExecutePipeline)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fAnreol%2fModBuild.asset)[RFTVManifest](assetlink://Assets%2fContentPack%2fRFTVManifest.asset)
+      Clearing PipelineJob error states'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 637832212379735127
+    message: '[ModBuild(0 - ExecutePipeline)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fAnreol%2fModBuild.asset)[RFTVManifest](assetlink://Assets%2fContentPack%2fRFTVManifest.asset)
+      Execute Pipeline'
+    context: []

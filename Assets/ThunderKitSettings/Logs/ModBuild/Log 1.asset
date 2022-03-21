@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f9af1c6015733a42be940cc462aa7ed, type: 3}
+  m_Name: Log 1
+  m_EditorClassIdentifier: 
+  pipeline: {fileID: 11400000, guid: c67f5a6a33715114e8be7947dfe3c3e5, type: 2}
+  creationDate:
+    ticks: 637832212275012816
+  entries:
+  - logLevel: 2
+    internalTime:
+      ticks: 637832212279046158
+    message: '[ModBuild(0 - ExecutePipeline)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fAnreol%2fModBuild.asset)
+      Pipeline has PipelineJobs that require a Manifest but no Manifest is assigned'
+    context:
+    - "Stacktrace\r\nPipeline has PipelineJobs that require a Manifest but no Manifest
+      is assigned\r\n\r\n  at ThunderKit.Core.Pipelines.Pipeline+<Execute>d__41.MoveNext
+      () [0x00228] in [C:\\Users\\Anr\\source\\repos\\ReleasedFromTheVoid\\Library\\PackageCache\\com.passivepicasso.thunderkit@db5ff970af\\Editor\\Core\\Pipelines\\Pipeline.cs:138](exceptionsource://C:\\Users\\Anr\\source\\repos\\ReleasedFromTheVoid\\Library\\PackageCache\\com.passivepicasso.thunderkit@db5ff970af\\Editor\\Core\\Pipelines\\Pipeline.cs#138) "
+  - logLevel: 2
+    internalTime:
+      ticks: 637832212279016232
+    message: '[ModBuild(0 - ExecutePipeline)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fAnreol%2fModBuild.asset)
+      Halted execution'
+    context: []
+  - logLevel: 2
+    internalTime:
+      ticks: 637832212278966614
+    message: '[ModBuild(0 - ExecutePipeline)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fAnreol%2fModBuild.asset)
+      Pipeline has PipelineJobs that require a Manifest but no Manifest is assigned'
+    context:
+    - Requirements
+    - 
+    - '[ModBuild.Copy](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fAnreol%2fModBuild.asset)'
+  - logLevel: 0
+    internalTime:
+      ticks: 637832212277476707
+    message: '[ModBuild(0 - ExecutePipeline)](assetlink://Assets%2fThunderKit-Editor-Stuff%2fPaths%26Pipelines%2fAnreol%2fModBuild.asset)
+      Execute Pipeline'
+    context: []

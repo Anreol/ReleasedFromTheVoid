@@ -1,0 +1,12 @@
+{
+	"strings":
+	{
+		"RULE_MISC_ALLVOIDCHESTCOSTVOIDCOIN": "Use Void Coins in Void Chests",
+
+		"RULE_ALLVOIDCHESTCOSTVOIDCOIN_CHOICE_ON_NAME": "Enabled",
+		"RULE_ALLVOIDCHESTCOSTVOIDCOIN_CHOICE_ON_DESC": "Void Cradles outside void seeds will cost Void Coins.",
+
+		"RULE_ALLVOIDCHESTCOSTVOIDCOIN_CHOICE_OFF_NAME": "Disabled",
+		"RULE_ALLVOIDCHESTCOSTVOIDCOIN_CHOICE_OFF_DESC": "Void Cradles outside void seeds will NOT cost Void Coins.",
+	}
+}
