@@ -77,6 +77,7 @@ namespace Assets.ContentPack.Modules.Scripts
         }
         public static void BalanceAssAssIn2()
         {
+            assassin2Body.gameObject.AddComponent<DeathRewards>().logUnlockableDef = Addressables.LoadAssetAsync<UnlockableDef>("RoR2/DLC1/Assassin2/Logs.Assassin2Body.asset").WaitForCompletion(); ;
             primaryConfigCharge = Addressables.LoadAssetAsync<EntityStateConfiguration>("RoR2/DLC1/Assassin2/EntityStates.Assassin2.ChargeDash.asset").WaitForCompletion();
             primaryConfigStrike = Addressables.LoadAssetAsync<EntityStateConfiguration>("RoR2/DLC1/Assassin2/EntityStates.Assassin2.DashStrike.asset").WaitForCompletion();
             secondaryConfig = Addressables.LoadAssetAsync<EntityStateConfiguration>("RoR2/DLC1/Assassin2/EntityStates.Assassin2.ThrowShuriken.asset").WaitForCompletion();
@@ -134,7 +135,7 @@ namespace Assets.ContentPack.Modules.Scripts
         }
         public static void BalanceMajorConstruct()
         {
-
+            majorConstructBody.GetComponent<DeathRewards>().bossDropTable = Addressables.LoadAssetAsync<ExplicitPickupDropTable>("RoR2/DLC1/MajorAndMinorConstruct/dtBossMegaConstruct.asset").WaitForCompletion();
         }
         public static void AddMajorConstructToStages()
         {

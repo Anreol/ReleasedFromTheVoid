@@ -34,7 +34,7 @@ namespace ReleasedFromTheVoid.Scripts
             voidChestCoinChoiceOn.onlyShowInGameBrowserIfNonDefault = true;
             voidChestCoinChoiceOn.requiredUnlockable = RoR2Content.Artifacts.EliteOnly.unlockableDef;
             voidChestCoinChoiceOn.excludeByDefault = false;
-            voidChestCoinChoiceOn.sprite = Assets.mainAssetBundle.LoadAsset<Sprite>("texHonorWormRuleOn");
+            voidChestCoinChoiceOn.sprite = Assets.mainAssetBundle.LoadAsset<Sprite>("texVoidCoinRuleOn");
 
             RuleChoiceDef voidChestCoinChoiceOff = allVoidChestCostVoidCoinRule.AddChoice("Off", false, false);
             voidChestCoinChoiceOff.tooltipNameToken = "RULE_ALLVOIDCHESTCOSTVOIDCOIN_CHOICE_OFF_NAME";
@@ -43,7 +43,7 @@ namespace ReleasedFromTheVoid.Scripts
             //wormEliteHonorChoiceOff.tooltipBodyColor = ColorCatalog.GetColor(ColorCatalog.ColorIndex.BossItemDark); No rule does this
             voidChestCoinChoiceOff.onlyShowInGameBrowserIfNonDefault = true;
             voidChestCoinChoiceOff.excludeByDefault = false;
-            voidChestCoinChoiceOff.sprite = Assets.mainAssetBundle.LoadAsset<Sprite>("texHonorWormRuleOff");
+            voidChestCoinChoiceOff.sprite = Assets.mainAssetBundle.LoadAsset<Sprite>("texVoidCoinRuleOff");
 
             allVoidChestCostVoidCoinRule.MakeNewestChoiceDefault();
             RuleCatalog_PatchedAddRule(allVoidChestCostVoidCoinRule, 5);

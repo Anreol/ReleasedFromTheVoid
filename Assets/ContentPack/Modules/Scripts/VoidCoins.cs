@@ -35,8 +35,8 @@ namespace ReleasedFromTheVoid.Scripts
             ExpansionDef dlc1 = Addressables.LoadAssetAsync<ExpansionDef>("RoR2/DLC1/Common/DLC1.asset").WaitForCompletion();
             GameObject runPrefab = Addressables.LoadAssetAsync<GameObject>("RoR2/DLC1/Common/DLC1RunBehavior.prefab").WaitForCompletion();
             dlc1.runBehaviorPrefab = runPrefab;
+            dlc1.runBehaviorPrefab.GetComponent<GlobalDeathRewards>().pickupRewards[0].chance += 0.5f; //Bump it to 10%
 
-           
         }
 
     }

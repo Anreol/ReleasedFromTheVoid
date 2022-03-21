@@ -8,7 +8,7 @@ namespace ReleasedFromTheVoid.Scripts
 {
     internal class VoidLocusTweaker
     {
-        public const int extraVoidBarrelPerPlayer = 7;
+        public const int extraVoidBarrelPerPlayer = 14;
         public const int extraVoidChestPerPlayer = 2;
         public const int extraVoidTripleChestPerPlayer = 1;
 
@@ -52,7 +52,7 @@ namespace ReleasedFromTheVoid.Scripts
                     stageCountInLastVoidStageVisit = Run.instance.stageClearCount + 1;
                     if (RFTVUnityPlugin.DLC1.runBehaviorPrefab)
                     {
-                        RFTVUnityPlugin.DLC1.runBehaviorPrefab.GetComponent<GlobalDeathRewards>().pickupRewards[0].chance += 0.15f;
+                        RFTVUnityPlugin.DLC1.runBehaviorPrefab.GetComponent<GlobalDeathRewards>().pickupRewards[0].chance += 0.20f;
                     }
                     GameObject gameObject = UnityEngine.Object.Instantiate<GameObject>(arenaPortal, new Vector3(-144f, 30f, 246.15f), new Quaternion(0, 70, 0, 0));
                     NetworkServer.Spawn(gameObject);
@@ -69,7 +69,7 @@ namespace ReleasedFromTheVoid.Scripts
                     stageCountInLastVoidStageVisit = Run.instance.stageClearCount + 1;
                     if (RFTVUnityPlugin.DLC1.runBehaviorPrefab)
                     {
-                        RFTVUnityPlugin.DLC1.runBehaviorPrefab.GetComponent<GlobalDeathRewards>().pickupRewards[0].chance -= 0.15f;
+                        RFTVUnityPlugin.DLC1.runBehaviorPrefab.GetComponent<GlobalDeathRewards>().pickupRewards[0].chance -= 0.20f;
                     }
                 }
             }
@@ -125,7 +125,7 @@ namespace ReleasedFromTheVoid.Scripts
         {
             if (SceneCatalog.mostRecentSceneDef != SceneCatalog.GetSceneDefFromSceneName("voidstage"))
                 return;
-            for (int i = 0; i < PlayerCharacterMasterController.instances.Count * extraVoidBarrelPerPlayer; i++)
+            for (int i = 0; i < extraVoidBarrelPerPlayer * Mathf.Min(PlayerCharacterMasterController.instances.Count, 4); i++)
             {
                 DirectorCore.instance.TrySpawnObject(new DirectorSpawnRequest(VoidCoins.voidBarrelSpawncard, new DirectorPlacementRule
                 {

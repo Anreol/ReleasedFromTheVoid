@@ -15,7 +15,7 @@ namespace ReleasedFromTheVoid
 #if DEBUG
             "9999." +
 #endif
-            "0.0.1";
+            "0.0.2";
 
         internal const string ModIdentifier = "ReleasedFromTheVoid";
         internal const string ModGuid = "com.Anreol." + ModIdentifier;
