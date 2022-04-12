@@ -1,12 +1,21 @@
 {
 	"strings":
 	{
-		"RULE_MISC_ALLVOIDCHESTCOSTVOIDCOIN": "Use Void Coins in Void Chests",
+		"RULE_MISC_ALLVOIDCHESTCOSTVOIDCOIN": "Use Void Markers in Void Chests",
 
 		"RULE_ALLVOIDCHESTCOSTVOIDCOIN_CHOICE_ON_NAME": "Enabled",
-		"RULE_ALLVOIDCHESTCOSTVOIDCOIN_CHOICE_ON_DESC": "Void Cradles outside void seeds will cost Void Coins.",
+		"RULE_ALLVOIDCHESTCOSTVOIDCOIN_CHOICE_ON_DESC": "Void Cradles outside void seeds will cost Void Markers.",
 
 		"RULE_ALLVOIDCHESTCOSTVOIDCOIN_CHOICE_OFF_NAME": "Disabled",
-		"RULE_ALLVOIDCHESTCOSTVOIDCOIN_CHOICE_OFF_DESC": "Void Cradles outside void seeds will NOT cost Void Coins.",
+		"RULE_ALLVOIDCHESTCOSTVOIDCOIN_CHOICE_OFF_DESC": "Void Cradles outside void seeds will NOT cost Void Markers.",
+		
+		
+		"RULE_MISC_STARTINGVOIDCOIN": "Starting Void Markers",
+
+		"RULE_STARTINGVOIDCOIN_CHOICE_ZERO_NAME": "Zero",
+		"RULE_STARTINGVOIDCOIN_CHOICE_ZERO_DESC": "Players will not spawn with any Void Markers.",
+
+		"RULE_STARTINGVOIDCOIN_CHOICE_TEN_NAME": "Ten",
+		"RULE_STARTINGVOIDCOIN_CHOICE_TEN_DESC": "Players will initially spawn with ten Void Markers.",
 	}
 }

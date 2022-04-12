@@ -85,14 +85,15 @@ namespace ReleasedFromTheVoid.Scripts
                     if (chestBehavior)
                     {
                         BasicPickupDropTable dropTable = (BasicPickupDropTable)chestBehavior.dropTable;
-                        if (item.costType == CostTypeIndex.PercentHealth && (dropTable.voidBossWeight + dropTable.voidTier1Weight + dropTable.voidTier2Weight + dropTable.voidTier3Weight) > 0)
+                        if ((dropTable.voidBossWeight + dropTable.voidTier1Weight + dropTable.voidTier2Weight + dropTable.voidTier3Weight) > 0)
                         {
                             ScriptedCombatEncounter scriptedCombatEncounter = item.GetComponent<ScriptedCombatEncounter>();
                             if (scriptedCombatEncounter)
                                 UnityEngine.Object.Destroy(scriptedCombatEncounter);
 
                             item.costType = CostTypeIndex.VoidCoin;
-                            item.cost = 1;
+                            if (NetworkServer.active)
+                                item.cost = 1;
                             if (chestBehavior.dropCount > 1)
                                 item.cost++;
                         }
@@ -102,10 +103,11 @@ namespace ReleasedFromTheVoid.Scripts
                     if (optionChestBehavior)
                     {
                         BasicPickupDropTable dropTable = (BasicPickupDropTable)optionChestBehavior.dropTable;
-                        if (item.costType == CostTypeIndex.PercentHealth && dropTable.name == "dtVoidTriple") //Name comparisons are bad, but I don't know any better
+                        if (dropTable.name == "dtVoidTriple") //Name comparisons are bad, but I don't know any better
                         {
                             item.costType = CostTypeIndex.VoidCoin;
-                            item.cost = 2;
+                            if (NetworkServer.active)
+                                item.cost = 2;
                         }
                         continue;
                     }

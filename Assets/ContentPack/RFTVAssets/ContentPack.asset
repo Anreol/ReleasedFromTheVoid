@@ -26,6 +26,7 @@ MonoBehaviour:
   eliteDefs: []
   unlockableDefs:
   - {fileID: 11400000, guid: 82aeee4a930a816408d46844428989bd, type: 2}
+  - {fileID: 11400000, guid: 9c68f5d5370590b40bc6d5a23d332e42, type: 2}
   survivorDefs: []
   artifactDefs: []
   effectDefs: []

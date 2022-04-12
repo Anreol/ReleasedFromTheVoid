@@ -37,7 +37,15 @@ namespace ReleasedFromTheVoid.Scripts
             dlc1.runBehaviorPrefab = runPrefab;
             dlc1.runBehaviorPrefab.GetComponent<GlobalDeathRewards>().pickupRewards[0].chance += 0.5f; //Bump it to 10%
 
+            Run.onPlayerFirstCreatedServer += GrantVoidCoins;
         }
 
+        private static void GrantVoidCoins(Run arg1, PlayerCharacterMasterController arg2)
+        {
+            if (arg2.master)
+            {
+                arg2.master.GiveVoidCoins((uint)RulebookExtras.runStartingVoidCoins);
+            }
+        }
     }
 }

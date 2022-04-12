@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 
-namespace Assets.ContentPack.Modules.Scripts
+namespace ReleasedFromTheVoid.Scripts
 {
     class AddUnusedBodies
     {
@@ -37,6 +37,15 @@ namespace Assets.ContentPack.Modules.Scripts
         static DirectorCardCategorySelection skyMeadowCardSelection;
         static DirectorCardCategorySelection wispGraveyardCardSelection;
         static DirectorCardCategorySelection sulfurPoolsCardSelection;
+
+        static DirectorCardCategorySelection itAncientLoftCardSelection;
+        static DirectorCardCategorySelection itDampCaveCardSelection;
+        static DirectorCardCategorySelection itFrozenWallCardSelection;
+        static DirectorCardCategorySelection itGolemPlainsCardSelection;
+        static DirectorCardCategorySelection itGooLakeCardSelection;
+        static DirectorCardCategorySelection itMoonSelection;
+        static DirectorCardCategorySelection itSkyMeadowSelection;
+
         [RoR2.SystemInitializer(new Type[]
         {
             typeof(RoR2.BodyCatalog),
@@ -59,9 +68,11 @@ namespace Assets.ContentPack.Modules.Scripts
 
             LoadDirectorCards();
             BalanceAssAssIn2();
-            AddAssAssInToStages();
+            if (RFTVUnityPlugin.EnableAssAssin.Value)
+                AddAssAssInToStages();
             BalanceMajorConstruct();
-            AddMajorConstructToStages();
+            if (RFTVUnityPlugin.EnableMajorConstruct.Value)
+                AddMajorConstructToStages();
         }
         public static void LoadDirectorCards()
         {
@@ -74,10 +85,19 @@ namespace Assets.ContentPack.Modules.Scripts
             skyMeadowCardSelection = Addressables.LoadAssetAsync<DirectorCardCategorySelection>("RoR2/Base/skymeadow/dccsSkyMeadowMonstersDLC1.asset").WaitForCompletion();
             wispGraveyardCardSelection = Addressables.LoadAssetAsync<DirectorCardCategorySelection>("RoR2/Base/wispgraveyard/dccsWispGraveyardMonstersDLC1.asset").WaitForCompletion();
             sulfurPoolsCardSelection = Addressables.LoadAssetAsync<DirectorCardCategorySelection>("RoR2/DLC1/sulfurpools/dccsSulfurPoolsMonstersDLC1.asset").WaitForCompletion();
+
+            itAncientLoftCardSelection = Addressables.LoadAssetAsync<DirectorCardCategorySelection>("RoR2/DLC1/itancientloft/dccsITAncientLoftMonsters.asset").WaitForCompletion();
+            itDampCaveCardSelection = Addressables.LoadAssetAsync<DirectorCardCategorySelection>("RoR2/DLC1/itdampcave/dccsITDampCaveMonsters.asset").WaitForCompletion();
+            itFrozenWallCardSelection = Addressables.LoadAssetAsync<DirectorCardCategorySelection>("RoR2/DLC1/itfrozenwall/dccsITFrozenWallMonsters.asset").WaitForCompletion();
+            itGolemPlainsCardSelection = Addressables.LoadAssetAsync<DirectorCardCategorySelection>("RoR2/DLC1/itgolemplains/dccsITGolemplainsMonsters.asset").WaitForCompletion();
+            itGooLakeCardSelection = Addressables.LoadAssetAsync<DirectorCardCategorySelection>("RoR2/DLC1/itgoolake/dccsITGooLakeMonsters.asset").WaitForCompletion();
+            itMoonSelection = Addressables.LoadAssetAsync<DirectorCardCategorySelection>("RoR2/DLC1/itmoon/dccsITMoonMonsters.asset").WaitForCompletion();
+            itSkyMeadowSelection = Addressables.LoadAssetAsync<DirectorCardCategorySelection>("RoR2/DLC1/itskymeadow/dccsITSkyMeadowMonsters.asset").WaitForCompletion();
+
         }
         public static void BalanceAssAssIn2()
         {
-            assassin2Body.gameObject.AddComponent<DeathRewards>().logUnlockableDef = Addressables.LoadAssetAsync<UnlockableDef>("RoR2/DLC1/Assassin2/Logs.Assassin2Body.asset").WaitForCompletion(); ;
+            assassin2Body.gameObject.AddComponent<DeathRewards>().logUnlockableDef = Addressables.LoadAssetAsync<UnlockableDef>("RoR2/DLC1/Assassin2/Logs.Assassin2Body.asset").WaitForCompletion();
             primaryConfigCharge = Addressables.LoadAssetAsync<EntityStateConfiguration>("RoR2/DLC1/Assassin2/EntityStates.Assassin2.ChargeDash.asset").WaitForCompletion();
             primaryConfigStrike = Addressables.LoadAssetAsync<EntityStateConfiguration>("RoR2/DLC1/Assassin2/EntityStates.Assassin2.DashStrike.asset").WaitForCompletion();
             secondaryConfig = Addressables.LoadAssetAsync<EntityStateConfiguration>("RoR2/DLC1/Assassin2/EntityStates.Assassin2.ThrowShuriken.asset").WaitForCompletion();
@@ -135,7 +155,10 @@ namespace Assets.ContentPack.Modules.Scripts
         }
         public static void BalanceMajorConstruct()
         {
+            majorConstructBody.isChampion = true;
             majorConstructBody.GetComponent<DeathRewards>().bossDropTable = Addressables.LoadAssetAsync<ExplicitPickupDropTable>("RoR2/DLC1/MajorAndMinorConstruct/dtBossMegaConstruct.asset").WaitForCompletion();
+            //majorConstructBody.GetComponent<DeathRewards>().logUnlockableDef = Addressables.LoadAssetAsync<UnlockableDef>("RoR2/DLC1/MajorAndMinorConstruct/Logs.MegaConstructBody.asset").WaitForCompletion();
+            majorConstructBody.GetComponent<DeathRewards>().logUnlockableDef = Assets.mainAssetBundle.LoadAsset<UnlockableDef>("Logs.MajorConstruct");
         }
         public static void AddMajorConstructToStages()
         {
@@ -155,6 +178,14 @@ namespace Assets.ContentPack.Modules.Scripts
                 minimumStageCompletions = 0,
                 preventOverhead = true
             };
+            DirectorCard majorConstructDCitSkyMeadow = new DirectorCard()
+            {
+                spawnCard = cscMajorConstruct,
+                selectionWeight = 1,
+                spawnDistance = DirectorCore.MonsterSpawnDistance.Standard,
+                minimumStageCompletions = 0,
+                preventOverhead = true
+            };
 
             mixCardSelection.AddCard(0, majorConstructDCGolemPlains);
             //golemplains1Monsters.categories[0].cards[3] = majorConstructDCGolemPlains; //Override MegaConstruct with MajorConstruct
@@ -164,6 +195,8 @@ namespace Assets.ContentPack.Modules.Scripts
             skyMeadowCardSelection.categories[0].cards[3].minimumStageCompletions = 10; //ANOTHER PRE-LOOP XI
             sulfurPoolsCardSelection.AddCard(0, majorConstructDCSulfurPools); //Add to SulfurPools
             sulfurPoolsCardSelection.categories[0].cards[1].minimumStageCompletions = 10; //WHY IS XI PRE-LOOP WHAT THE FUCK?
+
+            itSkyMeadowSelection.AddCard(0, majorConstructDCitSkyMeadow);
         }
     }
 }

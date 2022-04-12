@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1470584303
+CRC: 701180745
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 791d3a3172449363543c72dd64dbc513
+    Hash: 697d57c050e9abc0b35517d3056232c0
   TypeTreeHash:
     serializedVersion: 2
     Hash: 69ad500937b1003f4ae735ab128e7ce8
@@ -23,6 +23,9 @@ SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/ContentPack/RFTVAssets/Textures/texVoidCoinRuleOff.png
 - Assets/ContentPack/RFTVAssets/ContentPack.asset
+- Assets/ContentPack/RFTVAssets/Logs.MajorConstruct.asset
 - Assets/ContentPack/RFTVAssets/Textures/texVoidCoinRuleOn.png
 - Assets/ContentPack/RFTVAssets/CommandoDLCUnlock.asset
+- Assets/ContentPack/RFTVAssets/Textures/texVoidCoinRuleZero.png
+- Assets/ContentPack/RFTVAssets/Textures/texVoidCoinRuleTen.png
 Dependencies: []

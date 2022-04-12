@@ -1,4 +1,5 @@
 ﻿using BepInEx;
+using BepInEx.Configuration;
 using RoR2;
 using RoR2.ContentManagement;
 using RoR2.ExpansionManagement;
@@ -16,7 +17,7 @@ namespace ReleasedFromTheVoid
 #if DEBUG
             "9999." +
 #endif
-            "0.0.2";
+            "0.0.3";
 
         internal const string ModIdentifier = "ReleasedFromTheVoid";
         internal const string ModGuid = "com.Anreol." + ModIdentifier;
@@ -25,9 +26,13 @@ namespace ReleasedFromTheVoid
         public static PluginInfo pluginInfo;
 
         public static ExpansionDef DLC1;
+
+        public static ConfigEntry<bool> EnableAssAssin;
+        public static ConfigEntry<bool> EnableMajorConstruct;
         public void Awake()
         {
-            Debug.Log("Running ReleasedFromTheVoid!");
+            Debug.Log("Running " + ModGuid + "!");
+            InitConfigFileValues();
 #if DEBUG
             RFTVLog.logger = Logger;
             RFTVLog.LogW("Running ReleasedFromTheVoid DEBUG build. PANIC!");
@@ -39,7 +44,6 @@ namespace ReleasedFromTheVoid
             ContentManager.collectContentPackProviders += (addContentPackProvider) => addContentPackProvider(new RFTVContent());
             RoR2Application.onLoad += (delegate ()
             {
-                DLC1Content.Equipment.LunarPortalOnUse.canDrop = true;
                 DLC1 = Addressables.LoadAssetAsync<ExpansionDef>("RoR2/DLC1/Common/DLC1.asset").WaitForCompletion();
                 Scripts.CommandoSkinPatcher.Init();
             });
@@ -54,6 +58,24 @@ namespace ReleasedFromTheVoid
                 return;
             }
             orig(self, newFolders);
+        }
+        /// <summary>
+        /// HAS TO BE CALLED THE VERY FIRST, AS ANY OTHER SYSTEM HAS DEPENDENCIES THAT LOAD BEFORE APPLICATION IS FINISHED LOADING
+        /// </summary>
+        public void InitConfigFileValues()
+        {
+            EnableAssAssin = Config.Bind(
+                "Enemy Settings",
+                "EnableAssAssin",
+                true,
+                "Should Assassin be added to card decks."
+                );
+            EnableMajorConstruct = Config.Bind(
+                "Enemy Settings",
+                "EnableMajorConstruct",
+                true,
+                "Should Major / Iota Construct be added to card decks."
+                );
         }
         /*private void FixedUpdate()
         {

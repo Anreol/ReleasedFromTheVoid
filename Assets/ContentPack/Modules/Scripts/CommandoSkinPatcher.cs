@@ -24,7 +24,10 @@ namespace ReleasedFromTheVoid.Scripts
             commandoMarineSkin.unlockableDef = Addressables.LoadAssetAsync<UnlockableDef>("RoR2/DLC1/VoidSurvivor/Characters.VoidSurvivor.asset").WaitForCompletion();
             SurvivorDef mando = SurvivorCatalog.FindSurvivorDef("Commando");
             BodyIndex bodyIndex = BodyCatalog.FindBodyIndex("CommandoBody");
-
+            if (!mando || !commandoMarineSkin)
+            {
+                Debug.LogError("Failed to find either mando's survivor def or the marine skin");
+            }
             HG.ArrayUtils.ArrayAppend(ref mando.bodyPrefab.GetComponentInChildren<ModelSkinController>().skins, commandoMarineSkin);
             SkinDef[] skinDefs = new SkinDef[SkinCatalog.skinsByBody[(int)bodyIndex].Length + 1];
             SkinCatalog.skinsByBody[(int)bodyIndex].CopyTo(skinDefs, 0);
@@ -35,7 +38,7 @@ namespace ReleasedFromTheVoid.Scripts
             death[death.Length - 1] = commandoMarineSkin; //Already set +1
             BodyCatalog.skins[(int)bodyIndex] = death;
 
-            //Add to viewable catalog, entirely unnecesary
+            //Add to viewable catalog, entirely unnecesary. This is what makes it show as [NEW!]
             ViewablesCatalog.Node parent = ViewablesCatalog.FindNode("/Loadout/Bodies/CommandoBody/Skins/");
             ViewablesCatalog.Node child = new ViewablesCatalog.Node("skinCommandoMarine", false, parent);
             child.shouldShowUnviewed = ((UserProfile userProfile) => !userProfile.HasViewedViewable(child.fullName));
