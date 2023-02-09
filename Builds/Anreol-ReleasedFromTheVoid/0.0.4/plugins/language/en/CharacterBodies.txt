@@ -1,0 +1,7 @@
+{
+	"strings":
+	{
+		"MAJORCONSTRUCT_BODY_NAME": "Iota Construct",
+		"MAJORCONSTRUCT_BODY_SUBTITLE": "Surveillance System"
+	}
+}

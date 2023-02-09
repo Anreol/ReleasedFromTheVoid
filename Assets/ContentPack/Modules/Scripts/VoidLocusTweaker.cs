@@ -8,7 +8,7 @@ namespace ReleasedFromTheVoid.Scripts
 {
     internal class VoidLocusTweaker
     {
-        public const int extraVoidBarrelPerPlayer = 14;
+        public const int extraVoidBarrelPerPlayer = 4;
         public const int extraVoidChestPerPlayer = 2;
         public const int extraVoidTripleChestPerPlayer = 1;
 
@@ -21,7 +21,7 @@ namespace ReleasedFromTheVoid.Scripts
         })]
         public static void Init()
         {
-            if (!ReleasedFromTheVoid.RFTVUnityPlugin.EnableVoidLocus.Value) return;
+            if (!ReleasedFromTheVoid.RFTVUnityPlugin.EnableVoidLocusChanges.Value) return;
             LoadPrefabs();
             Stage.onServerStageBegin += onServerStageBegin;
             Stage.onServerStageComplete += onServerStageComplete;

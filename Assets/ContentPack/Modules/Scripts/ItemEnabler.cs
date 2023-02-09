@@ -12,7 +12,6 @@ namespace ReleasedFromTheVoid.Scripts
         })]
         public static void Init()
         {
-            if (!ReleasedFromTheVoid.RFTVUnityPlugin.EnableItem.Value) return;
             DLC1Content.Equipment.LunarPortalOnUse.canDrop = true;
             //Everything below is for making sure it appears, it's already assigned in the item def.
             DLC1Content.Equipment.LunarPortalOnUse.appearsInMultiPlayer = true;
@@ -20,6 +19,7 @@ namespace ReleasedFromTheVoid.Scripts
             DLC1Content.Equipment.LunarPortalOnUse.enigmaCompatible = false;
             DLC1Content.Equipment.LunarPortalOnUse.canBeRandomlyTriggered = false;
             DLC1Content.Equipment.LunarPortalOnUse.isLunar = true;
+            DLC1Content.Equipment.LunarPortalOnUse.requiredExpansion = RFTVUnityPlugin.DLC1;
         }
     }
 }

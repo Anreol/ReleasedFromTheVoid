@@ -23,7 +23,7 @@ MonoBehaviour:
   ShowLogWindow: 1
   MarkdownOpenMode: 0
   SelectedPipeline: {fileID: 11400000, guid: c67f5a6a33715114e8be7947dfe3c3e5, type: 2}
-  SelectedManifest: {fileID: 0}
+  SelectedManifest: {fileID: 11400000, guid: 79127477df65f053af9153d8eb168aff, type: 2}
   QuickAccessPipelines:
   - {fileID: 11400000, guid: c67f5a6a33715114e8be7947dfe3c3e5, type: 2}
   QuickAccessManifests:

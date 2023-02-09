@@ -14,7 +14,6 @@
         "Unity.Addressables.dll",
         "Unity.ResourceManager.dll",
         "LegacyResourcesAPI.dll",
-        "MMHOOK_RoR2.dll",
         "RoR2.dll"
     ],
     "autoReferenced": true,

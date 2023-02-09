@@ -262,9 +262,6 @@
     <Reference Include="LegacyResourcesAPI">
       <HintPath>C:/Users/Anr/source/repos/ReleasedFromTheVoid/Packages/Risk of Rain 2/LegacyResourcesAPI.dll</HintPath>
     </Reference>
-    <Reference Include="MMHOOK_RoR2">
-      <HintPath>C:/Users/Anr/source/repos/ReleasedFromTheVoid/Packages/mmhook-assemblies/MMHOOK_RoR2.dll</HintPath>
-    </Reference>
     <Reference Include="RoR2">
       <HintPath>C:/Users/Anr/source/repos/ReleasedFromTheVoid/Packages/Risk of Rain 2/RoR2.dll</HintPath>
     </Reference>

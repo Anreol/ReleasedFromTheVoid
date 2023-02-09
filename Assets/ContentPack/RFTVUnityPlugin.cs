@@ -31,9 +31,8 @@ namespace ReleasedFromTheVoid
         public static ConfigEntry<bool> EnableMajorConstruct;
         public static ConfigEntry<bool> EnableVoidCoins;
         public static ConfigEntry<bool> EnableVoidSuppressors;
-        public static ConfigEntry<bool> EnableItem;
         public static ConfigEntry<bool> EnableCommandoSkin;
-        public static ConfigEntry<bool> EnableVoidLocus;
+        public static ConfigEntry<bool> EnableVoidLocusChanges;
 
         public void Awake()
         {
@@ -76,31 +75,25 @@ namespace ReleasedFromTheVoid
                 "Module Settings",
                 "Enable Void Coins",
                 true,
-                "Should Void Coins be enabled."
+                "Creates rules related to the void coins, void barrels dropping coins, or void enemies dropping coins."
                 );
             EnableVoidSuppressors = Config.Bind(
                 "Module Settings",
                 "Enable Void Suppressors",
                 true,
-                "Should Void Suppressors be enabled."
-                );
-            EnableItem = Config.Bind(
-                "Module Settings",
-                "Enable Item",
-                true,
-                "Should Bazaar Portal item be enabled."
+                "Should Void Suppressors spawn and should strange scrap be changed to have a proper tier and item tags."
                 );
             EnableCommandoSkin = Config.Bind(
                 "Module Settings",
                 "Enable Commando Skin",
                 true,
-                "Should Helot be enabled."
+                "Should the Commando Helot skin be enabled. This does not bypass the requirement of having Void Fiend unlocked."
                 );
-            EnableVoidLocus = Config.Bind(
+            EnableVoidLocusChanges = Config.Bind(
                 "Module Settings",
                 "Enable Void Locus",
                 true,
-                "Should Void Locus changes be enabled."
+                "Should Void Locus changes be enabled, such as spawning a exit portal and spawning additional interactables at no additional cost."
                 );
         }
         /*private void FixedUpdate()

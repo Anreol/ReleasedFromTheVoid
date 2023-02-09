@@ -23,7 +23,7 @@ A mod that re-implements unused Survivors From The Void content back into the ga
 	- It will decrease back to normal chance once it is visited, for it to increase again after 4 stages.
 
 - Void Locus
-	- Will spawn 14 void barrels per player, up to four times.
+	- Will spawn 7 void barrels per player, up to four times.
 	- Will spawn 2 void chests per player
 	- Will spawn 1 triple chest per player
 	- Interactables credits scale overtime, up to 520 (Same as Sky Meadows)
@@ -48,9 +48,17 @@ About the mod itself, so far none, and I hope there's no networking bugs.
 Void Camps, for now, have their interactables still cost health, as the Void Camp generation seems to be after all directors have populated the stage and the stage has started. (This might also the reason of why survivors spawn inside them. The Void Camp just spawns after the players)
 
 ### Contact
-You can contact me by messaging to Anreol#8231 or @anreol:poa.st
+You can contact me by messaging to Anreol#8231
 
 ## Changelog
+**0.0.4**
+- Finally updated
+	- Added configs that were push requested to the mod
+		- I am unsure if disabling them breaks anything, it shouldn't.
+	- Changed some stuff around.
+	- Void supressors should start spawning again due to updated dependencies.
+	- I meant to fix missing language tokens but I couldn't remember what was broken
+	
 **0.0.3**
 - Finally updated
 	- Added config to enable / disable the adding of spawn cards of Assassins and Major Constructs.
