@@ -17,7 +17,7 @@ namespace ReleasedFromTheVoid
 #if DEBUG
             "9999." +
 #endif
-            "0.0.3";
+            "0.0.4";
 
         internal const string ModIdentifier = "ReleasedFromTheVoid";
         internal const string ModGuid = "com.Anreol." + ModIdentifier;
@@ -29,6 +29,12 @@ namespace ReleasedFromTheVoid
 
         public static ConfigEntry<bool> EnableAssAssin;
         public static ConfigEntry<bool> EnableMajorConstruct;
+        public static ConfigEntry<bool> EnableVoidCoins;
+        public static ConfigEntry<bool> EnableVoidSuppressors;
+        public static ConfigEntry<bool> EnableItem;
+        public static ConfigEntry<bool> EnableCommandoSkin;
+        public static ConfigEntry<bool> EnableVoidLocus;
+
         public void Awake()
         {
             Debug.Log("Running " + ModGuid + "!");
@@ -65,6 +71,36 @@ namespace ReleasedFromTheVoid
                 "EnableMajorConstruct",
                 true,
                 "Should Major / Iota Construct be added to card decks."
+                );
+            EnableVoidCoins = Config.Bind(
+                "Module Settings",
+                "Enable Void Coins",
+                true,
+                "Should Void Coins be enabled."
+                );
+            EnableVoidSuppressors = Config.Bind(
+                "Module Settings",
+                "Enable Void Suppressors",
+                true,
+                "Should Void Suppressors be enabled."
+                );
+            EnableItem = Config.Bind(
+                "Module Settings",
+                "Enable Item",
+                true,
+                "Should Bazaar Portal item be enabled."
+                );
+            EnableCommandoSkin = Config.Bind(
+                "Module Settings",
+                "Enable Commando Skin",
+                true,
+                "Should Helot be enabled."
+                );
+            EnableVoidLocus = Config.Bind(
+                "Module Settings",
+                "Enable Void Locus",
+                true,
+                "Should Void Locus changes be enabled."
                 );
         }
         /*private void FixedUpdate()

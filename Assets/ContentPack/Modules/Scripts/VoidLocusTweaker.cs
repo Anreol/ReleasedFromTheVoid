@@ -21,6 +21,7 @@ namespace ReleasedFromTheVoid.Scripts
         })]
         public static void Init()
         {
+            if (!ReleasedFromTheVoid.RFTVUnityPlugin.EnableVoidLocus.Value) return;
             LoadPrefabs();
             Stage.onServerStageBegin += onServerStageBegin;
             Stage.onServerStageComplete += onServerStageComplete;
