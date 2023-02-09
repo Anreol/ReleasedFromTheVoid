@@ -24,6 +24,7 @@ namespace ReleasedFromTheVoid.Scripts
         [RoR2.SystemInitializer]
         public static void Init()
         {
+            if (!ReleasedFromTheVoid.RFTVUnityPlugin.EnableVoidCoins.Value) return;
             voidCoinTable = Addressables.LoadAssetAsync<ExplicitPickupDropTable>("RoR2/DLC1/Common/DropTables/dtVoidCoin.asset").WaitForCompletion();
             voidBarrelSpawncard = Addressables.LoadAssetAsync<InteractableSpawnCard>("RoR2/DLC1/VoidCoinBarrel/iscVoidCoinBarrel.asset").WaitForCompletion();
             voidBarrelSpawncard.prefab.GetComponent<ModelLocator>().gameObject.AddComponent<ChestBehavior>().dropTable = voidCoinTable;
