@@ -20,6 +20,7 @@ namespace ReleasedFromTheVoid.Scripts
         //4. Profit
         public static void Init()
         {
+            if (!ReleasedFromTheVoid.RFTVUnityPlugin.EnableCommandoSkin.Value) return;
             commandoMarineSkin = Addressables.LoadAssetAsync<SkinDef>("RoR2/DLC1/skinCommandoMarine.asset").WaitForCompletion();
             commandoMarineSkin.unlockableDef = Addressables.LoadAssetAsync<UnlockableDef>("RoR2/DLC1/VoidSurvivor/Characters.VoidSurvivor.asset").WaitForCompletion();
             SurvivorDef mando = SurvivorCatalog.FindSurvivorDef("Commando");

@@ -35,6 +35,7 @@ namespace ReleasedFromTheVoid.Scripts
         })]
         private static void Init()
         {
+            if (!ReleasedFromTheVoid.RFTVUnityPlugin.EnableVoidCoins.Value) return;
             RuleDef allVoidChestCostVoidCoinRule = new RuleDef("Misc.AllVoidChestCostVoidCoin", "RULE_MISC_ALLVOIDCHESTCOSTVOIDCOIN");
 
             RuleChoiceDef voidChestCoinChoiceOn = allVoidChestCostVoidCoinRule.AddChoice("On", true, false);

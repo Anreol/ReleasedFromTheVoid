@@ -24,6 +24,7 @@ namespace ReleasedFromTheVoid.Scripts
         })]
         public static void Init()
         {
+            if (!ReleasedFromTheVoid.RFTVUnityPlugin.EnableVoidSuppressors.Value) return;
             FixStrangeScrap();
             SetupVoidSuppressorPrefab();
             Stage.onServerStageBegin += onServerStageBegin;
