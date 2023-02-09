@@ -1,0 +1,28 @@
+ManifestFileVersion: 0
+CRC: 1470584303
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 791d3a3172449363543c72dd64dbc513
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 69ad500937b1003f4ae735ab128e7ce8
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: -1746479147, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0a4f1c6c83fd27341b88f182994d904a, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/ContentPack/RFTVAssets/Textures/texVoidCoinRuleOff.png
+- Assets/ContentPack/RFTVAssets/ContentPack.asset
+- Assets/ContentPack/RFTVAssets/Textures/texVoidCoinRuleOn.png
+- Assets/ContentPack/RFTVAssets/CommandoDLCUnlock.asset
+Dependencies: []

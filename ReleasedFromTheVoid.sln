@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wwise", "Wwise.csproj", "{F5039805-4C47-4C78-C9AE-580DB94E1695}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RFTV", "RFTV.csproj", "{4330EBC4-8B5E-9A2A-B6AF-8DD68CBD526F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wwise.Editor", "Wwise.Editor.csproj", "{F58527F5-C62B-C5BA-A659-623CC5E321CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5039805-4C47-4C78-C9AE-580DB94E1695}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5039805-4C47-4C78-C9AE-580DB94E1695}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5039805-4C47-4C78-C9AE-580DB94E1695}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5039805-4C47-4C78-C9AE-580DB94E1695}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4330EBC4-8B5E-9A2A-B6AF-8DD68CBD526F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4330EBC4-8B5E-9A2A-B6AF-8DD68CBD526F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4330EBC4-8B5E-9A2A-B6AF-8DD68CBD526F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4330EBC4-8B5E-9A2A-B6AF-8DD68CBD526F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F58527F5-C62B-C5BA-A659-623CC5E321CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F58527F5-C62B-C5BA-A659-623CC5E321CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F58527F5-C62B-C5BA-A659-623CC5E321CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F58527F5-C62B-C5BA-A659-623CC5E321CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

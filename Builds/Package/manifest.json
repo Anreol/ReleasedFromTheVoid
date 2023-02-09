@@ -1,0 +1,10 @@
+﻿{
+	"name": "ReleasedFromTheVoid",
+	"version_number": "0.0.3",
+	"website_url": "https://github.com/Anreol/ReleasedFromTheVoid",
+	"description": "Is that a Void Suppressor? Re-enables unused Survivors Of The Void content back into the game.",
+	"dependencies": [
+		"bbepis-BepInExPack-5.4.1801",
+		"RiskofThunder-HookGenPatcher-1.2.3"
+	]
+}
