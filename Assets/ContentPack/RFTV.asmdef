@@ -1,21 +1,21 @@
 {
     "name": "RFTV",
-    "references": [],
+    "references": [
+        "GUID:a44f47cf3ada4435dbc516bad0bc86fe"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": true,
     "overrideReferences": true,
     "precompiledReferences": [
         "BepInEx.dll",
-        "RoR2-Stubbed.dll",
         "HGUnityUtils.dll",
         "HGCSharpUtils.dll",
         "Unity.Addressables.dll",
         "Unity.ResourceManager.dll",
-        "com.unity.multiplayer-hlapi.Runtime.dll",
-        "KinematicCharacterController.dll",
         "LegacyResourcesAPI.dll",
-        "MMHOOK_RoR2.dll"
+        "MMHOOK_RoR2.dll",
+        "RoR2.dll"
     ],
     "autoReferenced": true,
     "defineConstraints": [],

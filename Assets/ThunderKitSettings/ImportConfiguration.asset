@@ -1,0 +1,713 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8114938385121865361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bb24ae4d588a7b4fbc1757e2fb5fd78, type: 3}
+  m_Name: Import Addressable Catalog
+  m_EditorClassIdentifier: 
+  enabled: 1
+--- !u!114 &-7039960310941364277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eecc301ed1414ee4ca063a9eeee2a159, type: 3}
+  m_Name: TextMeshPro Uninstaller
+  m_EditorClassIdentifier: 
+  enabled: 1
+--- !u!114 &-6547022789372529018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2636f9900aca35942b349a07d34faaf4, type: 3}
+  m_Name: Assembly Publicizer
+  m_EditorClassIdentifier: 
+  enabled: 1
+  assemblyNames:
+  - RoR2.dll
+  - KinematicCharacterController.dll
+  NStripExecutable: {fileID: 102900000, guid: 39e2644fdd2b31844bb745cba95889bb, type: 3}
+--- !u!114 &-5560405098724296675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73dfaad4b0991214da3e623825c8357c, type: 3}
+  m_Name: MMHook Generator
+  m_EditorClassIdentifier: 
+  enabled: 1
+  assemblyNames:
+  - RoR2.dll
+  - KinematicCharacterController.dll
+  hookGenExecutable: {fileID: 102900000, guid: e441941fc2ce18f4cb8ae6dc66c65a21, type: 3}
+  cachedAssembliesInAppDomain:
+  - mscorlib.dll
+  - UnityEngine.dll
+  - UnityEngine.AIModule.dll
+  - UnityEngine.ARModule.dll
+  - UnityEngine.AccessibilityModule.dll
+  - UnityEngine.AndroidJNIModule.dll
+  - UnityEngine.AnimationModule.dll
+  - UnityEngine.AssetBundleModule.dll
+  - UnityEngine.AudioModule.dll
+  - UnityEngine.ClothModule.dll
+  - UnityEngine.ClusterInputModule.dll
+  - UnityEngine.ClusterRendererModule.dll
+  - UnityEngine.CoreModule.dll
+  - UnityEngine.CrashReportingModule.dll
+  - UnityEngine.DSPGraphModule.dll
+  - UnityEngine.DirectorModule.dll
+  - UnityEngine.GameCenterModule.dll
+  - UnityEngine.GridModule.dll
+  - UnityEngine.HotReloadModule.dll
+  - UnityEngine.IMGUIModule.dll
+  - UnityEngine.ImageConversionModule.dll
+  - UnityEngine.InputModule.dll
+  - UnityEngine.InputLegacyModule.dll
+  - UnityEngine.JSONSerializeModule.dll
+  - UnityEngine.LocalizationModule.dll
+  - UnityEngine.ParticleSystemModule.dll
+  - UnityEngine.PerformanceReportingModule.dll
+  - UnityEngine.PhysicsModule.dll
+  - UnityEngine.Physics2DModule.dll
+  - UnityEngine.ProfilerModule.dll
+  - UnityEngine.ScreenCaptureModule.dll
+  - UnityEngine.SharedInternalsModule.dll
+  - UnityEngine.SpriteMaskModule.dll
+  - UnityEngine.SpriteShapeModule.dll
+  - UnityEngine.StreamingModule.dll
+  - UnityEngine.SubstanceModule.dll
+  - UnityEngine.SubsystemsModule.dll
+  - UnityEngine.TLSModule.dll
+  - UnityEngine.TerrainModule.dll
+  - UnityEngine.TerrainPhysicsModule.dll
+  - UnityEngine.TextCoreModule.dll
+  - UnityEngine.TextRenderingModule.dll
+  - UnityEngine.TilemapModule.dll
+  - UnityEngine.UIModule.dll
+  - UnityEngine.UIElementsModule.dll
+  - UnityEngine.UNETModule.dll
+  - UnityEngine.UmbraModule.dll
+  - UnityEngine.UnityAnalyticsModule.dll
+  - UnityEngine.UnityConnectModule.dll
+  - UnityEngine.UnityTestProtocolModule.dll
+  - UnityEngine.UnityWebRequestModule.dll
+  - UnityEngine.UnityWebRequestAssetBundleModule.dll
+  - UnityEngine.UnityWebRequestAudioModule.dll
+  - UnityEngine.UnityWebRequestTextureModule.dll
+  - UnityEngine.UnityWebRequestWWWModule.dll
+  - UnityEngine.VFXModule.dll
+  - UnityEngine.VRModule.dll
+  - UnityEngine.VehiclesModule.dll
+  - UnityEngine.VideoModule.dll
+  - UnityEngine.WindModule.dll
+  - UnityEngine.XRModule.dll
+  - UnityEditor.dll
+  - System.Core.dll
+  - System.dll
+  - Mono.Security.dll
+  - System.Configuration.dll
+  - System.Xml.dll
+  - Unity.CompilationPipeline.Common.dll
+  - UnityEditor.VR.dll
+  - UnityEditor.Graphs.dll
+  - UnityEditor.WindowsStandalone.Extensions.dll
+  - SyntaxTree.VisualStudio.Unity.Bridge.dll
+  - Assembly-CSharp.dll
+  - Unity.Timeline.Editor.dll
+  - BsDiff.dll
+  - UnityEditor.CacheServer.dll
+  - RoR2EditorKit.dll
+  - Unity.ScriptableBuildPipeline.Editor.dll
+  - RoR2EditorScripts.dll
+  - ThunderKit.Addressable.Config.dll
+  - ThunderKit.Thunderstore.dll
+  - Unity.Formats.Fbx.Editor.dll
+  - AssetRipperShaderPatch.dll
+  - UnityVersion.dll
+  - ThunderKit.Markdown.dll
+  - Unity.Timeline.dll
+  - ToolbarExtender.Editor.dll
+  - RoR2Importers.dll
+  - Unity.Postprocessing.Editor.dll
+  - FbxBuildTestAssets.dll
+  - Autodesk.Fbx.Editor.dll
+  - AssetsExporter.dll
+  - ThunderKit.Addressable.Tools.dll
+  - Unity.2D.Sprite.Editor.dll
+  - Unity.Postprocessing.Runtime.dll
+  - Unity.2D.Tilemap.Editor.dll
+  - AssetsTools.NET.dll
+  - Autodesk.Fbx.dll
+  - ThunderKit.Core.dll
+  - Unity.ScriptableBuildPipeline.dll
+  - RFTV.dll
+  - UnityEditor.UIBuilderModule.dll
+  - Unity.Formats.Fbx.Runtime.dll
+  - Wwise.Editor.dll
+  - ThunderKit.Common.dll
+  - Wwise.dll
+  - MonoDetector.dll
+  - com.unity.multiplayer-hlapi.Editor.dll
+  - com.unity.multiplayer-weaver.Editor.dll
+  - com.unity.multiplayer-hlapi.Runtime.dll
+  - Markdig.Signed.dll
+  - SharpCompress.dll
+  - ICSharpCode.SharpZipLib.dll
+  - System.IO.Compression.dll
+  - System.Drawing.dll
+  - System.Globalization.Extensions.dll
+  - UnityEngine.SpatialTracking.dll
+  - Unity.ResourceManager.dll
+  - System.Diagnostics.StackTrace.dll
+  - GenericIK.dll
+  - System.Net.Http.dll
+  - Zio.dll
+  - LegacyResourcesAPI.dll
+  - HGCSharpUtils.dll
+  - Unity.ProBuilder.dll
+  - EOS.dll
+  - ModLoader.dll
+  - System.Numerics.dll
+  - System.Xml.XPath.XDocument.dll
+  - System.IO.Compression.FileSystem.dll
+  - HGUnityUtils.dll
+  - Newtonsoft.Json.dll
+  - UnityEngine.UI.dll
+  - System.EnterpriseServices.dll
+  - Unity.RenderPipelines.Core.Runtime.dll
+  - Facepunch.Steamworks.dll
+  - Unity.ProBuilder.Stl.dll
+  - SimpleJSON.dll
+  - Unity.Addressables.dll
+  - MMHOOK_RoR2.dll
+  - System.Runtime.Serialization.Xml.dll
+  - MMHOOK_KinematicCharacterController.dll
+  - Unity.ProBuilder.KdTree.dll
+  - HGSignup.dll
+  - RoR2.dll
+  - Rewired_Core.dll
+  - System.Runtime.Serialization.dll
+  - Rewired_CSharp.dll
+  - Unity.ProBuilder.Poly2Tri.dll
+  - System.Data.dll
+  - Decalicious.dll
+  - Rewired_Windows.dll
+  - UnityEngine.XR.LegacyInputHelpers.dll
+  - Unity.ProBuilder.Csg.dll
+  - System.ComponentModel.Composition.dll
+  - Unity.TextMeshPro.dll
+  - KinematicCharacterController.dll
+  - System.Transactions.dll
+  - Unity.RenderPipelines.Core.ShaderLibrary.dll
+  - System.ServiceModel.Internals.dll
+  - MonoMod.Utils.dll
+  - MonoMod.RuntimeDetour.dll
+  - Mono.Cecil.Mdb.dll
+  - Mono.Cecil.dll
+  - Mono.Cecil.Pdb.dll
+  - RoR2BepInExPack.dll
+  - BepInEx.dll
+  - BepInEx.Bootstrap.dll
+  - BepInEx.Preloader.dll
+  - BepInEx.GUI.Patcher.dll
+  - HarmonyXInterop.dll
+  - FixPluginTypesSerialization.dll
+  - 0Harmony20.dll
+  - 0Harmony.dll
+  - Mono.Cecil.Rocks.dll
+  - BepInEx.Harmony.dll
+  - netstandard.dll
+  - System.Xml.Linq.dll
+  - SyntaxTree.VisualStudio.Unity.Messaging.dll
+  - ExCSS.Unity.dll
+  - Unity.Cecil.dll
+  - Unity.SerializationLogic.dll
+  - Unity.Legacy.NRefactory.dll
+--- !u!114 &-3546780808136839420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b0facc354ed134db02010df191c2d0, type: 3}
+  m_Name: R2API Submodule Installer
+  m_EditorClassIdentifier: 
+  enabled: 0
+  serializeSelectionIntoJson: 1
+  r2apiSubmodules:
+  - submoduleName: R2API_Core
+    description: Core R2API module
+    dependedncyID: RiskofThunder-R2API_Core
+    shouldInstall: 1
+    isHardDependency: 0
+    dependencies:
+    - BepInExPack
+    - HookGenPatcher
+  - submoduleName: R2API_ContentManagement
+    description: API for adding content to the game
+    dependedncyID: RiskofThunder-R2API_ContentManagement
+    shouldInstall: 0
+    isHardDependency: 0
+    dependencies:
+    - BepInExPack
+    - HookGenPatcher
+    - R2API_Core
+  - submoduleName: R2API_ArtifactCode
+    description: API for making Artifact Codes
+    dependedncyID: RiskofThunder-R2API_ArtifactCode
+    shouldInstall: 0
+    isHardDependency: 0
+    dependencies:
+    - BepInExPack
+    - HookGenPatcher
+    - R2API_Core
+  - submoduleName: R2API_Colors
+    description: API for registering Colors to the game
+    dependedncyID: RiskofThunder-R2API_Colors
+    shouldInstall: 0
+    isHardDependency: 0
+    dependencies:
+    - BepInExPack
+    - HookGenPatcher
+    - R2API_Core
+  - submoduleName: R2API_CommandHelper
+    description: API for registering console commands
+    dependedncyID: RiskofThunder-R2API_CommandHelper
+    shouldInstall: 0
+    isHardDependency: 0
+    dependencies:
+    - BepInExPack
+    - HookGenPatcher
+    - R2API_Core
+  - submoduleName: R2API_DamageType
+    description: API for registering damage types
+    dependedncyID: RiskofThunder-R2API_DamageType
+    shouldInstall: 0
+    isHardDependency: 0
+    dependencies:
+    - BepInExPack
+    - HookGenPatcher
+    - R2API_Core
+  - submoduleName: R2API_Deployable
+    description: API for adding custom deployables
+    dependedncyID: RiskofThunder-R2API_Deployable
+    shouldInstall: 0
+    isHardDependency: 0
+    dependencies:
+    - BepInExPack
+    - HookGenPatcher
+    - R2API_Core
+  - submoduleName: R2API_Difficulty
+    description: API for adding custom in-game difficulties
+    dependedncyID: RiskofThunder-R2API_Difficulty
+    shouldInstall: 0
+    isHardDependency: 0
+    dependencies:
+    - BepInExPack
+    - HookGenPatcher
+    - R2API_Core
+  - submoduleName: R2API_Director
+    description: API for easily modifiying the Director (RoR2 monster / interactable
+      spawner) behaviour
+    dependedncyID: RiskofThunder-R2API_Director
+    shouldInstall: 0
+    isHardDependency: 0
+    dependencies:
+    - BepInExPack
+    - HookGenPatcher
+    - R2API_Core
+  - submoduleName: R2API_Dot
+    description: API for adding custom damage over time effects
+    dependedncyID: RiskofThunder-R2API_Dot
+    shouldInstall: 0
+    isHardDependency: 0
+    dependencies:
+    - BepInExPack
+    - HookGenPatcher
+    - R2API_Core
+  - submoduleName: R2API_Elites
+    description: API for adding custom elite types
+    dependedncyID: RiskofThunder-R2API_Elites
+    shouldInstall: 0
+    isHardDependency: 0
+    dependencies:
+    - BepInExPack
+    - HookGenPatcher
+    - R2API_Core
+    - R2API_ContentManagement
+  - submoduleName: R2API_Items
+    description: API for adding custom items
+    dependedncyID: RiskofThunder-R2API_Items
+    shouldInstall: 0
+    isHardDependency: 0
+    dependencies:
+    - BepInExPack
+    - HookGenPatcher
+    - R2API_Core
+    - R2API_ContentManagement
+  - submoduleName: R2API_Language
+    description: API for modifying the language localisation of the game
+    dependedncyID: RiskofThunder-R2API_Language
+    shouldInstall: 0
+    isHardDependency: 0
+    dependencies:
+    - BepInExPack
+    - HookGenPatcher
+    - R2API_Core
+  - submoduleName: R2API_Loadout
+    description: API for registering skills, skins and entity states
+    dependedncyID: RiskofThunder-R2API_Loadout
+    shouldInstall: 0
+    isHardDependency: 0
+    dependencies:
+    - BepInExPack
+    - HookGenPatcher
+    - R2API_Core
+    - R2API_ContentManagement
+  - submoduleName: R2API_LobbyConfig
+    description: API for modifying the in-game lobby rules
+    dependedncyID: RiskofThunder-R2API_LobbyConfig
+    shouldInstall: 0
+    isHardDependency: 0
+    dependencies:
+    - BepInExPack
+    - HookGenPatcher
+    - R2API_Core
+  - submoduleName: R2API_Networking
+    description: Networking API around the Unity UNet Low Level API (LLAPI)
+    dependedncyID: RiskofThunder-R2API_Networking
+    shouldInstall: 0
+    isHardDependency: 0
+    dependencies:
+    - BepInExPack
+    - HookGenPatcher
+    - R2API_Core
+  - submoduleName: R2API_Orb
+    description: API for creation and management of custom Orb types.
+    dependedncyID: RiskofThunder-R2API_Orb
+    shouldInstall: 0
+    isHardDependency: 0
+    dependencies:
+    - BepInExPack
+    - HookGenPatcher
+    - R2API_Core
+  - submoduleName: R2API_Prefab
+    description: API for Prefab creation, networking and duplication
+    dependedncyID: RiskofThunder-R2API_Prefab
+    shouldInstall: 0
+    isHardDependency: 0
+    dependencies:
+    - BepInExPack
+    - HookGenPatcher
+    - R2API_Core
+    - R2API_ContentManagement
+  - submoduleName: R2API_RecalculateStats
+    description: API for manipulating Character Stats
+    dependedncyID: RiskofThunder-R2API_RecalculateStats
+    shouldInstall: 0
+    isHardDependency: 0
+    dependencies:
+    - BepInExPack
+    - HookGenPatcher
+    - R2API_Core
+  - submoduleName: R2API_Rulebook
+    description: API for registering rules to the Rule Catalog
+    dependedncyID: RiskofThunder-R2API_Rulebook
+    shouldInstall: 0
+    isHardDependency: 0
+    dependencies:
+    - BepInExPack
+    - HookGenPatcher
+    - R2API_Core
+  - submoduleName: R2API_SceneAsset
+    description: API for retrieving assets that live exclusively in game scenes
+    dependedncyID: RiskofThunder-R2API_SceneAsset
+    shouldInstall: 0
+    isHardDependency: 0
+    dependencies:
+    - BepInExPack
+    - HookGenPatcher
+    - R2API_Core
+  - submoduleName: R2API_Sound
+    description: API for adding custom sounds or musics
+    dependedncyID: RiskofThunder-R2API_Sound
+    shouldInstall: 0
+    isHardDependency: 0
+    dependencies:
+    - BepInExPack
+    - HookGenPatcher
+    - R2API_Core
+    - R2API_ContentManagement
+  - submoduleName: R2API_TempVisualEffect
+    description: API for adding custom temporary visual effects for characters.
+    dependedncyID: RiskofThunder-R2API_TempVisualEffect
+    shouldInstall: 0
+    isHardDependency: 0
+    dependencies:
+    - BepInExPack
+    - HookGenPatcher
+    - R2API_Core
+    - R2API_ContentManagement
+  - submoduleName: R2API_Unlockable
+    description: API for adding custom achievements and unlockables
+    dependedncyID: RiskofThunder-R2API_Unlockable
+    shouldInstall: 0
+    isHardDependency: 0
+    dependencies:
+    - BepInExPack
+    - HookGenPatcher
+    - R2API_Core
+    - R2API_ContentManagement
+--- !u!114 &-3267005167685981206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4e66fd1b2f0a6b4e951af502eba5a2b, type: 3}
+  m_Name: Create Game Package
+  m_EditorClassIdentifier: 
+  enabled: 1
+--- !u!114 &-2321691025410012621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4090d1da9d2c4d64393fc97cd46e8414, type: 3}
+  m_Name: Unity GUI Uninstaller
+  m_EditorClassIdentifier: 
+  enabled: 1
+--- !u!114 &-1754742955001826262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 892ee265a9c0b884c8c9c36e42a802c6, type: 3}
+  m_Name: Install BepInEx
+  m_EditorClassIdentifier: 
+  enabled: 1
+--- !u!114 &-1069078128776190556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512775de21a2e0e41ba77b90aced0c69, type: 3}
+  m_Name: PostProcessing Unity Package Installer
+  m_EditorClassIdentifier: 
+  enabled: 1
+--- !u!114 &-847285776125111817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08f74610dc9ac9d4dac443c315f5685d, type: 3}
+  m_Name: Ensure RoR2 Thunderstore Source
+  m_EditorClassIdentifier: 
+  enabled: 1
+--- !u!114 &-782793317846760847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b40885578be10f4785f1fa347e9fefa, type: 3}
+  m_Name: Import Project Settings
+  m_EditorClassIdentifier: 
+  enabled: 1
+  IncludedSettings: -1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc02a62d93c1105498092e320b2f0f46, type: 3}
+  m_Name: ImportConfiguration
+  m_EditorClassIdentifier: 
+  ConfigurationExecutors:
+  - {fileID: -1069078128776190556}
+  - {fileID: -7039960310941364277}
+  - {fileID: -2321691025410012621}
+  - {fileID: -6547022789372529018}
+  - {fileID: -5560405098724296675}
+  - {fileID: 537866654584813832}
+  - {fileID: 4343351844696837949}
+  - {fileID: -782793317846760847}
+  - {fileID: 6558575639437883225}
+  - {fileID: -3267005167685981206}
+  - {fileID: -8114938385121865361}
+  - {fileID: 2906561344655031487}
+  - {fileID: -847285776125111817}
+  - {fileID: -1754742955001826262}
+  - {fileID: -3546780808136839420}
+  - {fileID: 4409973908995555628}
+  - {fileID: 3594736642336133953}
+  - {fileID: 421532632460408366}
+  ConfigurationIndex: 18
+  totalImportExtensionCount: 18
+--- !u!114 &188957010034309654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7156a49146b0bc44791e7e0141f1a773, type: 3}
+  m_Name: Install R2API
+  m_EditorClassIdentifier: 
+  enabled: 0
+--- !u!114 &421532632460408366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8840720793112784295b7c9b06af7493, type: 3}
+  m_Name: Get Bitness
+  m_EditorClassIdentifier: 
+  enabled: 1
+--- !u!114 &537866654584813832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a87a9f1780c348d4080afaf9971d3a7e, type: 3}
+  m_Name: Import Assemblies
+  m_EditorClassIdentifier: 
+  enabled: 1
+--- !u!114 &2906561344655031487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d5ab1acc2056478f835108aa9474b, type: 3}
+  m_Name: Configure Addressable Graphics Settings
+  m_EditorClassIdentifier: 
+  enabled: 1
+--- !u!114 &3594736642336133953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f4761da1836bc043a94000ffe25bf40, type: 3}
+  m_Name: Install RoR2 Editor Kit
+  m_EditorClassIdentifier: 
+  enabled: 1
+--- !u!114 &4343351844696837949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5a17181e89416446b9fb82f03553599, type: 3}
+  m_Name: RoR2 LegacyResourceAPI Patcher
+  m_EditorClassIdentifier: 
+  enabled: 1
+--- !u!114 &4409973908995555628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6a6266570ba40d41bad5cf59676ab77, type: 3}
+  m_Name: Install RoR2MultiplayerHLAPI
+  m_EditorClassIdentifier: 
+  enabled: 1
+--- !u!114 &6558575639437883225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d0e45bf5627b554081a563dac04ff6a, type: 3}
+  m_Name: Set Deferred Shading
+  m_EditorClassIdentifier: 
+  enabled: 1
+--- !u!114 &6632734783363710759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0eacdf291dc183458517d6b18760c52, type: 3}
+  m_Name: Install FixPluginTypesSerialization
+  m_EditorClassIdentifier: 
+  enabled: 1

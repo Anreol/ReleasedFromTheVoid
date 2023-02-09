@@ -40,7 +40,6 @@ namespace ReleasedFromTheVoid
             pluginInfo = Info;
             instance = this;
 
-            On.RoR2.Language.SetFolders += Death;
             ContentManager.collectContentPackProviders += (addContentPackProvider) => addContentPackProvider(new RFTVContent());
             RoR2Application.onLoad += (delegate ()
             {
@@ -49,16 +48,7 @@ namespace ReleasedFromTheVoid
             });
 
         }
-        private void Death(On.RoR2.Language.orig_SetFolders orig, Language self, System.Collections.Generic.IEnumerable<string> newFolders)
-        {
-            if (System.IO.Directory.Exists(Assets.languageRoot))
-            {
-                var dirs = System.IO.Directory.EnumerateDirectories(System.IO.Path.Combine(Assets.languageRoot), self.name);
-                orig(self, newFolders.Union(dirs));
-                return;
-            }
-            orig(self, newFolders);
-        }
+
         /// <summary>
         /// HAS TO BE CALLED THE VERY FIRST, AS ANY OTHER SYSTEM HAS DEPENDENCIES THAT LOAD BEFORE APPLICATION IS FINISHED LOADING
         /// </summary>
@@ -66,7 +56,7 @@ namespace ReleasedFromTheVoid
         {
             EnableAssAssin = Config.Bind(
                 "Enemy Settings",
-                "EnableAssAssin",
+                "EnableAssAssIn",
                 true,
                 "Should Assassin be added to card decks."
                 );
