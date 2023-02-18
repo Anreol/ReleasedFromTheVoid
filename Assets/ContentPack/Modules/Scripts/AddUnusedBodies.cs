@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
+using HG;
 
 namespace ReleasedFromTheVoid.Scripts
 {
@@ -162,7 +163,7 @@ namespace ReleasedFromTheVoid.Scripts
         }
         public static void AddMajorConstructToStages()
         {
-            DirectorCard majorConstructDCGolemPlains = new DirectorCard()
+            DirectorCard majorConstructDC = new DirectorCard()
             {
                 spawnCard = cscMajorConstruct,
                 selectionWeight = 1,
@@ -170,33 +171,41 @@ namespace ReleasedFromTheVoid.Scripts
                 minimumStageCompletions = 3,
                 preventOverhead = true
             };
-            DirectorCard majorConstructDCSulfurPools = new DirectorCard()
+            On.RoR2.ClassicStageInfo.RebuildCards += (orig, self) => // add it wherever Xi Construct is loaded
             {
-                spawnCard = cscMajorConstruct,
-                selectionWeight = 1,
-                spawnDistance = DirectorCore.MonsterSpawnDistance.Standard,
-                minimumStageCompletions = 0,
-                preventOverhead = true
+                SceneDef mostRecentSceneDef = SceneCatalog.mostRecentSceneDef;
+                if (self.monsterDccsPool) HandleDccsPool(self.monsterDccsPool);
+                if (self.monsterCategories) HandleDccs(self.monsterCategories);
+                orig(self);
             };
-            DirectorCard majorConstructDCitSkyMeadow = new DirectorCard()
+            On.EntityStates.GenericCharacterDeath.FixedUpdate += (orig, self) =>
             {
-                spawnCard = cscMajorConstruct,
-                selectionWeight = 1,
-                spawnDistance = DirectorCore.MonsterSpawnDistance.Standard,
-                minimumStageCompletions = 0,
-                preventOverhead = true
+                orig(self);
+                if (self is EntityStates.MajorConstruct.Death)
+                {
+                    if (self.fixedAge <= 5f || !NetworkServer.active) return;
+                    self.DestroyBodyAsapServer();
+                }
             };
-
-            mixCardSelection.AddCard(0, majorConstructDCGolemPlains);
-            //golemplains1Monsters.categories[0].cards[3] = majorConstructDCGolemPlains; //Override MegaConstruct with MajorConstruct
-            golemplains1Monsters.AddCard(0, majorConstructDCGolemPlains); //Add to GolemPlains1
-            golemplains1Monsters.categories[0].cards[3].minimumStageCompletions = 10; //Make MegaConstruct not appear til much later
-            skyMeadowCardSelection.AddCard(0, majorConstructDCSulfurPools); //Add to SkyMeadow
-            skyMeadowCardSelection.categories[0].cards[3].minimumStageCompletions = 10; //ANOTHER PRE-LOOP XI
-            sulfurPoolsCardSelection.AddCard(0, majorConstructDCSulfurPools); //Add to SulfurPools
-            sulfurPoolsCardSelection.categories[0].cards[1].minimumStageCompletions = 10; //WHY IS XI PRE-LOOP WHAT THE FUCK?
-
-            itSkyMeadowSelection.AddCard(0, majorConstructDCitSkyMeadow);
+            void HandleDccsPool(DccsPool dccsPool)
+            {
+                for (int i = 0; i < dccsPool.poolCategories.Length; i++)
+                {
+                    DccsPool.Category category = dccsPool.poolCategories[i];
+                    HandleDccsPoolEntries(category.alwaysIncluded);
+                    HandleDccsPoolEntries(category.includedIfConditionsMet);
+                    HandleDccsPoolEntries(category.includedIfNoConditionsMet);
+                }
+            }
+            void HandleDccsPoolEntries(DccsPool.PoolEntry[] entries) { foreach (DccsPool.PoolEntry poolEntry in entries) { HandleDccs(poolEntry.dccs); } }
+            void HandleDccs(DirectorCardCategorySelection dccs)
+            {
+                for (int i = 0; i < dccs.categories.Length; i++)
+                {
+                    ref DirectorCardCategorySelection.Category cat = ref dccs.categories[i];
+                    if (Array.Exists(cat.cards, x => x.spawnCard.prefab.name.Contains("MegaConstruct"))) ArrayUtils.ArrayAppend(ref cat.cards, majorConstructDC);
+                }
+            }
         }
     }
 }
